@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Link Checker</title>
+    <link href="/static/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/static/css//custom.css" rel="stylesheet">
+
+</head>
+<body>
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-header">
+            <h4 class="mb-0">Link Checker</h4>
+        </div>
+        <div class="card-body">
+            <form id="linkForm">
+                <div class="mb-3">
+                    <label for="links" class="form-label">Link(ler):</label>
+                    <textarea class="form-control" id="links" rows="5" placeholder="Her satıra bir link girin" required></textarea>
+                </div>
+                <button id="control" type="submit" class="btn btn-primary">Kontrol Et</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="card mt-4">
+        <div class="card-header">
+            <h4 class="mb-0">Sonuçlar</h4>
+        </div>
+        <div class="card-body">
+            <table class="table table-bordered table-hover mt-3" id="resultTable">
+                <thead>
+                <tr>
+                    <th>Link</th>
+                    <th>HTTP</th>
+                    <th>Açıklama</th>
+                </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<script src="/static/js/jquery-3.6.0.min.js"></script>
+<script src="/static/js/custom.js"></script>
+</body>
+</html>
